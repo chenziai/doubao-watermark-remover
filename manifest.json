@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "豆包水印移除工具",
+  "version": "1.0.0",
+  "description": "去除豆包生成的图片和视频水印，支持生成15秒视频",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "豆包水印移除工具"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
+}
